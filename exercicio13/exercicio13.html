@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Estacionamento</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <h2>Calcule o custo total que o carro ficou no estacionamento</h2>
+    </main>
+    <main>
+      <div class="form">
+        <label>Tempo de entrada</label>
+        <input type="time" name="tempo_inicio" id="tempo_inicio" step="2" />
+      </div>
+      <div class="form">
+        <label>Tempo de saída</label>
+        <input type="time" name="tempo_fim" id="tempo_fim" step="2" />
+      </div>
+      <button onclick="setCalculoTempoEstadia()">Calcular Tempo</button>
+    </main>
+    <h2>Custo total</h2>
+    <div class="custo_total"></div>
+  </body>
+  <script src="index.js"></script>
+</html>
